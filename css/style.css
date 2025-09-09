@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  background-color: #e2d6cd;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #71482a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  }
+
+/****************   Nav Section **********************/
+nav {
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eaa9b6; 
+  border-bottom: .2rem solid #b6354f;
+  padding: 1.0rem 2.5rem;    
+  color: #b6354f;  
+  font-size: x-large;  
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+nav a {
+  color: #b6354f;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #d84b67;
+  text-decoration: underline;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaa9b6; 
+  border-top: .2rem solid #b6354f;  
+  color: #b6354f;  
+  padding: 1.0rem 2.5rem;  
+  font-size: large;  
+  margin-top:auto;
+}
+footer a {
+  color: #b6354f;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #d84b67;
+  text-decoration: underline;
+}
+/*********** Splash Page ************************/
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+header h1 {
+  font-family: "Homemade Apple", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: xxx-large;
+  color: #71482a;
+}
+
+header img {
+  border-width: 1.0rem;
+  border-color: #71482a;
+  border-style: double;
+  border-radius:0;
+}
+
+.address {
+  text-align: center;   
+  font-size: 1.25rem;    
+}
+
+.tagline {
+  text-align: center;   
+  font-size: 1.5rem;
+  padding-left: 300px;
+  padding-right: 300px
+}
+
+/************* Sections ********************/
+hr {
+  border-color: #d84b67;
+  width: 90%;
+}
+
+section h3 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: x-large;
+  color: #71482a;
+  text-align: center;
+}
+section h2 {
+  font-family: "Homemade Apple", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: xx-large;
+  color: #b6354f;
+  margin-left: 12rem;
+  margin-bottom: .1rem;
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: 1fr .6fr;
+  margin-left: 17rem;
+  margin-right: 3rem;
+  font-size: x-large;
+  margin-top: 0;
+}
+
+section ul {
+  list-style-type: none;
+  margin-left: 15rem;
+  font-size: x-large;
+  margin-top: 0;
+}
+
+section a {
+  color: #b6354f;
+  text-decoration: none;
+}
+
+section a:hover {
+  color: #d84b67;
+  text-decoration: underline;
+}
+
+/**************   Projects   *****************/
+.three-col {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(20rem, 1fr));
+  gap: 2rem;
+  justify-content: center; 
+  margin: 1rem 5rem 5rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;  
+  margin-bottom: 1rem;            
+}
+
+.card ul{
+  list-style: square;
+  margin:0;
+}
+
+.card {
+  background-color: #ffd3db; 
+  border: .5rem solid #eaa9b6;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 7px 15px rgba(182,53,79,0.5);
+  transition-duration: 300ms;
+}
+.card:hover{
+  box-shadow: 0 7px 15px rgba(182,53,79,1.0);
+  transform: translateY(-.5rem);
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .three-col {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .tagline {  
+      font-size: 1.5rem;
+      padding-left: 100px;
+      padding-right: 100px
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  margin:2rem;
+  padding: 2rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: xx-large;
+  align-self: center;
+  justify-self: center;
+  background-color: #ffd3db
+}
+
+input {
+    width: 100%;
+    height: 2rem;
+    font-size: x-large;
+    color: #71482a;
+    margin: .5rem 0 2rem;
+    border: .15rem solid #d84b67;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  background-image: repeating-linear-gradient(135deg, #ffffff 0 10px, #fcf8f9 10px 20px);
+  border: .2rem solid #d84b67;
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  font-size: large;
+  color: #71482a;
+  height: 15rem;
+  resize:none;
+  margin: .5rem 0;
+  border: .15rem solid #d84b67;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+}
+textarea:focus {
+  background-image: repeating-linear-gradient(135deg, #ffffff 0 10px, #fcf8f9 10px 20px);
+  border: .25rem solid #d84b67;
+  outline: none;
+}
+button[type=submit] {
+  background-color: #fcf8f9;
+  border: .15rem solid #d84b67;
+  width: 100%;
+  height: 3rem;
+  font-size: x-large;
+  color: #71482a;
+  margin-top: 2rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+}
+button[type=submit]:hover {
+  background-color: #fdf0f3;
+  border: .25rem solid #d84b67;
+  color:#d84b67;
+  font-style: italic;
+}
+ h1 {
+  text-align: center;   
+  font-size: 2.5rem;
+  font-family: "Homemade Apple", cursive;
+  font-weight: 400;
+  font-style: normal;
+ }
